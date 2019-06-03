@@ -84,11 +84,11 @@ contract FinexboxToken is IERC20 {
     string public symbol;
 
     constructor() public {
-        decimals = 8;
-        _totalSupply = 33500000 * 10 ** uint(decimals);
+        decimals = 18;
+        _totalSupply = 30000000 * 10 ** uint(decimals);
         _balances[msg.sender] = _totalSupply;
-        name = "FinexboxToken";
-        symbol = "FNB";
+        name = "OKEX_TOKEN";
+        symbol = "OKB";
     }
 
     function totalSupply() public view returns (uint256) {
